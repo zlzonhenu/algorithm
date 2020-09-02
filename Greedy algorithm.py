@@ -21,3 +21,13 @@ while True:
     M -= 1
 
 print(sum)
+
+#다른 방법
+#가장 큰수가 나오는 횟수
+count = int(M / K+1)*K + M % K+1
+
+sum = 0
+sum += count*first
+sum += (M-count)*second
+
+print(sum)
