@@ -10,7 +10,7 @@ res = 0
 while lt <= rt:
     cnt = 1
     mid = (lt+rt) // 2
-    for i in range(1, n-1):
+    for i in range(1, n):
         dif = locs[i] - locs[0]
         if mid <= dif:
             cnt += 1
